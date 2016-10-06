@@ -7,6 +7,24 @@ module Employee
       get do
         EmpData.all
       end
+
     end
+
+    desc "create a new employee"
+    # This takes care of parameter validation
+    params do 
+      requires :name, type: String
+      requires :address, type: String
+      requires :age, type: Integer
+    end
+    # This takes cares of creating employee
+    post do
+      EmpData.create!({
+        name:params[:name],
+        address:params[:address],
+        age:params[:age]
+      })
+    end
+
   end
 end
