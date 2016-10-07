@@ -24,6 +24,16 @@ module Employee
         })
       end
 
+      desc "delete an employee"
+      params do 
+        requires :id, type: String
+      end
+      delete ':id' do
+        EmpData.find(params[:id]).destroy!
+      end
+
+      
+
     end
 
 
