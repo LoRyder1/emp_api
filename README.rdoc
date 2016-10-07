@@ -26,5 +26,7 @@ Things you may want to cover:
 ## curl commands
 
 - http://localhost:3000/api/v1/employee_data.json
+- curl -d "name=x&address=y&age=z" http://localhost:3000/api/v1/employee_data.json
+- curl -X POST "name=x&address=y&age=z" http://localhost:3000/api/v1/employee_data.json
 
 - GET, POST, PUT, DELETE
