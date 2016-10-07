@@ -23,6 +23,8 @@ Things you may want to cover:
 
 * ...
 
+## curl commands
 
-Please feel free to use a different markup language if you do not plan to run
-<tt>rake doc:app</tt>.
+- http://localhost:3000/api/v1/employee_data.json
+
+- GET, POST, PUT, DELETE
